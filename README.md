@@ -2,7 +2,7 @@
 
 Запустить docker образ: `make run`. Контейнер запускается с флагом --rm.
 
-Скачать себе образ - `docker pull dnevsky/vk-bot-welcome`
+Скачать docker образ - `docker pull dnevsky/vk-bot-welcome`
 
 `.env` переменные:
 ```
