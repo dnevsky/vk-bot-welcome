@@ -20,6 +20,3 @@ COPY --from=builder /app/config /app/config
 WORKDIR /app
 
 CMD ["./vk-bot-welcome"]
-
-
-

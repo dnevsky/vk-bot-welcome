@@ -1,3 +1,5 @@
+.PHONY: build run push
+
 build:
 	docker build --tag dnevsky/vk-bot-welcome .
 
