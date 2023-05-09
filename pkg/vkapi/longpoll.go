@@ -33,6 +33,10 @@ func (v *VKApi) GetLongPollServer(group_id int) (models.LongPoolServerResponse, 
 		return response, err
 	}
 
+	if response.Response.Key == "" {
+		return response, errors.New("bad request. check token")
+	}
+
 	return response, nil
 }
 

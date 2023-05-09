@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 
@@ -23,7 +22,7 @@ func main() {
 	log.Println("Start longpoll...")
 	err := vk.StartLongPoll(viper.GetInt("vk.group_id"))
 
-	fmt.Println(err)
+	log.Println(err)
 }
 
 func init_config() error {
