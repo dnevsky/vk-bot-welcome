@@ -1,6 +1,7 @@
 Собрать docker образ: `make build`.
 
 Запустить docker образ: `make run`. Контейнер запускается с флагом --rm.
+upd: уже нет. Сделал через docker-compose дабы обеспечить отказоустойчивость.
 
 Скачать docker образ - `docker pull dnevsky/vk-bot-welcome`
 

@@ -1,10 +1,13 @@
-.PHONY: build run push
+.PHONY: build run push shutdown
 
 build:
 	docker build --tag dnevsky/vk-bot-welcome .
 
 run:
-	docker run -d -i --env VK_TOKEN=<token> --name vk-bot-welcome -it dnevsky/vk-bot-welcome
+	docker-compose up -d vk-bot-welcome
+
+shutdown:
+	docker-compose down
 
 push:
 	docker push dnevsky/vk-bot-welcome:latest

@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  vk-bot-welcome:
+    image: dnevsky/vk-bot-welcome
+    container_name: vk-bot-welcome
+    restart: always
+    env_file:
+      - .env
